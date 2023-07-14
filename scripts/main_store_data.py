@@ -1,0 +1,54 @@
+import socket
+from unpack_struct import _unpack
+from io import BytesIO
+import struct
+from _leveldb import _write
+
+
+def _unpack(tx):
+    buf = BytesIO(tx)
+
+    key_len_bytes = buf.read(4)
+    key_len, = struct.unpack("<i", key_len_bytes)
+    key = buf.read(key_len)
+
+    m_len_bytes = buf.read(4)
+    m_len, = struct.unpack("<i", m_len_bytes)
+    m = buf.read(m_len)
+
+    return key, m
+
+
+def start_server():
+    server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+    server_address = ('localhost', 30000)
+    server_socket.bind(server_address)
+
+    server_socket.listen(1)
+    print("SERVER STARTED, WAITING FOR CLIENT...")
+
+    while True:
+        client_socket, client_address = server_socket.accept()
+        print("CLIENT OK, ADDRESS => ", client_address)
+
+        handle_client(client_socket)
+
+        client_socket.close()
+
+
+def handle_client(client_socket):
+    while True:
+        data = client_socket.recv(1024)
+        if not data:
+            break
+        else:
+            try:
+                key, m = _unpack(data)
+                _write(key, data)
+                print("DATA HAS BEEN STORED, DATA => ", data)
+            except Exception as e:
+                print("Exception => ", e)
+
+
+start_server()
