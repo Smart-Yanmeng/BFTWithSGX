@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4f3f2eae-52da-46d1-9cf1-8b2fd1ba985f" name="Changes" comment="2023/07/16">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BFTWithSGX.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python.manifest.template" beforeDir="false" afterPath="$PROJECT_DIR$/python.manifest.template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Server_receipt_sgx.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Server_receipt_sgx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/main_in_sgx.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/main_in_sgx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/main_out_sgx.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/main_out_sgx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/main_store_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/main_store_data.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$/scripts/crypto/attribute/ABE" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="abb2e9c3-1bfd-4161-901a-db99015dbfd6" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2SYYWXQmb1xlKyC7MIvnktJSZfW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/yorky/Desktop/BFTWithSGX&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f3f2eae-52da-46d1-9cf1-8b2fd1ba985f" name="Changes" comment="" />
+      <created>1689325013464</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689325013464</updated>
+      <workItem from="1689325014496" duration="3823000" />
+      <workItem from="1689329277904" duration="48000" />
+      <workItem from="1689330474358" duration="1022000" />
+      <workItem from="1689429933581" duration="1247000" />
+      <workItem from="1689432787790" duration="1699000" />
+      <workItem from="1689435766795" duration="2530000" />
+    </task>
+    <task id="LOCAL-00001" summary="2023/07/14">
+      <option name="closed" value="true" />
+      <created>1689330533080</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689330533080</updated>
+    </task>
+    <task id="LOCAL-00002" summary="2023/07/14">
+      <option name="closed" value="true" />
+      <created>1689331166164</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689331166164</updated>
+    </task>
+    <task id="LOCAL-00003" summary="2023/07/14">
+      <option name="closed" value="true" />
+      <created>1689331210974</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689331210974</updated>
+    </task>
+    <task id="LOCAL-00004" summary="2023/07/14">
+      <option name="closed" value="true" />
+      <created>1689432804733</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689432804733</updated>
+    </task>
+    <task id="LOCAL-00005" summary="2023/07/16">
+      <option name="closed" value="true" />
+      <created>1689437090836</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689437090836</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/scripts" />
+      <path value="$PROJECT_DIR$/scripts/crypto/attribute/ABE" />
+    </ignored-roots>
+    <MESSAGE value="2023/07/14" />
+    <MESSAGE value="2023/07/16" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023/07/16" />
+  </component>
+</project>

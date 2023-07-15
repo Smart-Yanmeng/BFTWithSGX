@@ -53,4 +53,5 @@ sgx.trusted_files = [
 {% endfor %}
   "file:scripts/",
   "file:config/",
+  "file:attribute_key/",
 ]
