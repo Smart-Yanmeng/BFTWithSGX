@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f3f2eae-52da-46d1-9cf1-8b2fd1ba985f" name="Changes" comment="2023/07/16">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/BFTWithSGX.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python.manifest.template" beforeDir="false" afterPath="$PROJECT_DIR$/python.manifest.template" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/Server_receipt_sgx.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Server_receipt_sgx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/main_in_sgx.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/main_in_sgx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/main_out_sgx.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/main_out_sgx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/main_store_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/main_store_data.py" afterDir="false" />
-    </list>
+    <list default="true" id="4f3f2eae-52da-46d1-9cf1-8b2fd1ba985f" name="Changes" comment="2023/07/16" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +70,7 @@
       <workItem from="1689330474358" duration="1022000" />
       <workItem from="1689429933581" duration="1247000" />
       <workItem from="1689432787790" duration="1699000" />
-      <workItem from="1689435766795" duration="2530000" />
+      <workItem from="1689435766795" duration="2602000" />
     </task>
     <task id="LOCAL-00001" summary="2023/07/14">
       <option name="closed" value="true" />
@@ -126,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689437090836</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="2023/07/16">
+      <option name="closed" value="true" />
+      <created>1689439963922</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689439963922</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
