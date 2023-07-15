@@ -8,6 +8,8 @@ import os
 import logging
 import traceback
 from multiprocessing import Value as mpValue, Process
+import struct
+from io import BytesIO
 
 
 # Network node class: deal with socket communications
@@ -27,7 +29,7 @@ class SgxServer(Process):
 
     def _listen_and_recv_forever(self):
         pid = os.getpid()
-        print("receipt my IP is " + self.ip)
+        print("SERVER STARTED")
 
         def _handler(sock, address):
             # buf = b''
@@ -35,23 +37,23 @@ class SgxServer(Process):
             tmp = b''
             try:
                 while not self.stop.value:
+                    tmp += sock.recv(200000)
+                    if tmp == b'0':
+                        continue
+                    buf = BytesIO(tmp)
+                    size, = struct.unpack("<i", buf.read(4))
+                    tx = buf.read(size)
+                    if len(tmp) - 4 != size:
+                        continue
+                    if tmp != '' and tmp:
+                        # print("王文卓发来数据")
+                        self.sgx_put(tx)  # sever_put
+                        # tx = self.message_get()
+                        # print("成功放入队列")
 
-                    tmp = sock.recv(200000)
-                    while True:
-                        if tmp == b'0':
-                            break
-                        if tmp != '' and tmp:
-                            # print("王文卓发来数据")
-                            self.sgx_put(tmp)  # sever_put
-                            # tx = self.message_get()
-                            # print("成功放入队列")
-
-                        else:
-                            raise ValueError
-                        tmp = b''
-                        if tmp == b'':
-                            break
-                    break
+                    else:
+                        raise ValueError
+                    tmp = b''
             except Exception as e:
                 print(str((e, traceback.print_exc())))
 

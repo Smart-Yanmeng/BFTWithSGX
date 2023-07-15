@@ -1,7 +1,10 @@
+import struct
 from ctypes import c_bool
 import hashlib
 import time
 import socket
+import struct
+from io import BytesIO
 from Server_receipt_sgx import SgxServer
 from multiprocessing import Value as mpValue, Queue as mpQueue
 
@@ -15,6 +18,14 @@ def _hash(x):
     return hashlib.sha256(x).digest()
 
 
+def get_len(msg):
+    buf = BytesIO()
+    buf.write(struct.pack("<i", len(msg)))
+    buf.write(msg)
+    buf.seek(0)
+    return buf.read()
+
+
 def client_to_sgx(m):
     # FROM SERVER UNTRUSTED PART TO SERVER TRUSTED PART
     host = '127.0.0.1'
@@ -23,7 +34,8 @@ def client_to_sgx(m):
     try:
         sk = socket.socket()
         sk.connect((host, port))
-        sk.sendall(m)
+        tx = get_len(m)
+        sk.sendall(tx)
         # data = sk.recv(1024)
         print("MESSAGE => ", m)
         print("SEND OK")

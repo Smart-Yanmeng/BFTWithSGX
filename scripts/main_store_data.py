@@ -1,5 +1,4 @@
 import socket
-from unpack_struct import _unpack
 from io import BytesIO
 import struct
 from _leveldb import _write
@@ -38,17 +37,24 @@ def start_server():
 
 
 def handle_client(client_socket):
+    data = b''
     while True:
-        data = client_socket.recv(1024)
+        data += client_socket.recv(1024)
         if not data:
             break
         else:
+            buf = BytesIO(data)
+            size, = struct.unpack("<i", buf.read(4))
+            tx = buf.read(size)
+            if len(data) - 4 != size:
+                continue
             try:
-                key, m = _unpack(data)
-                _write(key, data)
+                key, m = _unpack(tx)
+                _write(key, m)
                 print("DATA HAS BEEN STORED, DATA => ", data)
             except Exception as e:
                 print("Exception => ", e)
+            break
 
 
 start_server()
